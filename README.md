@@ -15,3 +15,8 @@ The behaviour observed is that it's not possible to get a status badge to reflec
 ## Status Badges
 
 The first production deployment was triggered by `workflow_dispatch` and cancelled. Subsequent production deployments have been triggered by tagging the code on main and pushing with tags.
+
+* [![Production Deployment](https://github.com/agarthetiger/status-badge-for-tags/actions/workflows/production.yml/badge.svg)](https://github.com/agarthetiger/status-badge-for-tags/actions/workflows/production.yml) Branch: Default, Event: Default
+* [![Production Deployment](https://github.com/agarthetiger/status-badge-for-tags/actions/workflows/production.yml/badge.svg?branch=main)](https://github.com/agarthetiger/status-badge-for-tags/actions/workflows/production.yml) Branch: main, Event: Default
+* [![Production Deployment](https://github.com/agarthetiger/status-badge-for-tags/actions/workflows/production.yml/badge.svg?branch=main&event=push)](https://github.com/agarthetiger/status-badge-for-tags/actions/workflows/production.yml) Branch: main, Event: Push
+* [![Production Deployment](https://github.com/agarthetiger/status-badge-for-tags/actions/workflows/production.yml/badge.svg?branch=main&event=workflow_run)](https://github.com/agarthetiger/status-badge-for-tags/actions/workflows/production.yml) Branch: main, Event: workflow_run
