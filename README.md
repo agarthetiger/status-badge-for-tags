@@ -10,9 +10,15 @@ There are two workflows in this repo, one for a fictitious development deploymen
 
 The production workflow is triggered by tagging a commit on the main branch, or by manually running the workflow via `workflow_dispatch`.
 
-The behaviour observed is that it's not possible to get a status badge to reflect the last production workflow run. Even though the status badge urls allow for selecting a workflow file by name, as well as the branch and various events, it is not possible to get the status for the workflows triggered from pushing a tag.
+## Expectation
 
-## Status Badges
+My expectation is that it is possible to display markdown for a badge which will reflect the most recent run of the "Production Deployment" `production.yml` workflow. Either that or it should be possible to display the status of this workflow when triggered by the push of a matching tag, as per the `on:` section in the workflow file.
+
+## Actual behaviour
+
+At the time of writing, the behaviour observed is that it's not possible to get a status badge to reflect the last production workflow run. Even though the status badge urls allow for selecting a workflow file by name, as well as the branch and various events, it is not possible to get the status for the workflows triggered from pushing a tag.
+
+### Status Badges
 
 The first production deployment was triggered by `workflow_dispatch` and cancelled. Subsequent production deployments have been triggered by tagging the code on main and pushing with tags.
 
